@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Controls="clr-namespace:MyHelper">
+    <Style x:Key="MetroTextBox">
+        <Setter Property="Controls:TextBoxHelper.MyProperty" Value="1" />
+        <!--往往此处不显示附加字段的解决办法1.这个项目是wpf应用程序才能添加资源字典 2.在引入Controls需要编译下，再设置样式-->
+    </Style>
+</ResourceDictionary>
