@@ -6,8 +6,10 @@
             <Setter.Value>
                 <ControlTemplate>
                     <Grid>
-                        <TextBox Width="150" Height="30" Background="Green" Text="{TemplateBinding Controls:TextBoxHelper.MyText}"></TextBox>
+                        <TextBox Width="150" Height="30" Background="{TemplateBinding Background}" Text="{TemplateBinding Controls:TextBoxHelper.MyText}"></TextBox>
                         <!--此处的属性和cs的属性数据类型要一致-->
+
+                        <!--此处前台的样式属性需要的要写出来 TemplateBinding Background-->
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
@@ -16,7 +18,7 @@
         <!--分离的原理是前台，样式 都引用同一个静态类-->
         
         <Style.Triggers>
-            
+         
         </Style.Triggers>
     </Style>
 </ResourceDictionary>

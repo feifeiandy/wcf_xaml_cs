@@ -15,7 +15,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBox Style="{DynamicResource MetroTextBox}" Width="150" Controls:TextBoxHelper.MyText="请输入用户名...."></TextBox>
+        <TextBox Style="{DynamicResource MetroTextBox}" Background="Green" Width="160" Height="100" Controls:TextBoxHelper.MyText="请输入用户名..."></TextBox>
 
         <!--<ComboBox x:Name="cmb_loginName" HorizontalAlignment="Stretch"
 				Height="30"
