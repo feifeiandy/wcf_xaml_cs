@@ -2,7 +2,21 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:Controls="clr-namespace:MyHelper">
     <Style x:Key="MetroTextBox" TargetType="TextBox">
-        <Setter Property="Controls:TextBoxHelper.MyProperty" Value="1" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <TextBox Width="150" Height="30" Background="Green" Text="{TemplateBinding Controls:TextBoxHelper.MyText}"></TextBox>
+                        <!--此处的属性和cs的属性数据类型要一致-->
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
         <!--往往此处不显示附加字段的解决办法1.这个项目是wpf应用程序才能添加资源字典 2.在引入Controls需要编译下，再设置样式 -->
+        <!--分离的原理是前台，样式 都引用同一个静态类-->
+        
+        <Style.Triggers>
+            
+        </Style.Triggers>
     </Style>
 </ResourceDictionary>

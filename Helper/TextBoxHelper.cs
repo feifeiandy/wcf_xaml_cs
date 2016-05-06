@@ -25,6 +25,24 @@ namespace MyHelper
         public static readonly DependencyProperty MyPropertyProperty =
             DependencyProperty.RegisterAttached("MyProperty", typeof(int), typeof(TextBoxHelper), new PropertyMetadata(0));
 
+
+
+
+        public static string GetMyText(DependencyObject obj)
+        {
+            return (string)obj.GetValue(MyTextProperty);
+        }
+
+        public static void SetMyText(DependencyObject obj, string value)
+        {
+            obj.SetValue(MyTextProperty, value);
+        }
+
+        // Using a DependencyProperty as the backing store for MyText.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty MyTextProperty =
+            DependencyProperty.RegisterAttached("MyText", typeof(string), typeof(TextBoxHelper), new PropertyMetadata("1"));
+
+        
         
     }
 }
