@@ -41,7 +41,7 @@ namespace MyHelper
         // Using a DependencyProperty as the backing store for MyText.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty MyTextProperty =
             DependencyProperty.RegisterAttached("MyText", typeof(string), typeof(TextBoxHelper), new PropertyMetadata("1"));
-
+        // 此处默认值要设置正确 为字符串格式
         
         
     }
